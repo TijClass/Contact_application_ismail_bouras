@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+     background:#E9E4F0;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 
 .con{
     height: 100vh;
-    background: linear-gradient(68.66deg, #B6C7CC 60.14%, #58C57D 54.15%, rgba(44, 65, 97, 0) 54.16%, #FFFFFF 54.17%) ;
+   
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -31,6 +32,7 @@ h1 {
 }
 .sib{
     margin-top: 16rem;
+    padding-left: 9rem;
 }
 
 .log{
@@ -40,11 +42,12 @@ h1 {
     margin-right: 5rem;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.logo{
+img{
     margin: 1rem;
     ALIGN-SELF: START;
 
 }
+
 .par{
     margin: 2rem 0;
 }
@@ -55,4 +58,33 @@ h1 {
     margin: 0.7rem 0;
     height: 2rem;
     width: 21rem;
+    padding: 1rem;
+}
+.button{
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #3183FF;
+    border: none;
+    border-radius: 24px;
+}
+@media (max-width: 1100px) {
+
+.con{
+    background:  rgba(44, 65, 97, 0) ;
+    display: grid;
+    grid-template-columns:  1fr;
+}
+.contran{
+    width: 100%;
+}
+.sib{
+    padding:0 10rem;
+    margin-top: 1rem;
+}
+.log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
