@@ -15,3 +15,30 @@ body{
     background-position: center;
     background-size: cover; */
 }
+form{
+    background: linear-gradient( 115deg, rgba(0, 25, 82, 0.8), rgba(32, 4, 64, 0.7));
+    margin: 0 auto;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%;
+}
+form input{
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 50%;
+    margin-top: 1rem;
+}
+.bot{
+    display: flex;
+}
+.input{
+    width: 3rem;
+}
