@@ -20,3 +20,19 @@ h1 {
     color: #3183FF
     ;
 }
+.contran {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+    margin-top: 23rem;
+}
+
+.log{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 23rem;
+    margin-right: 5rem;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
