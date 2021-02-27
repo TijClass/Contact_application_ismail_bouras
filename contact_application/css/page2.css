@@ -19,7 +19,6 @@ body{
 form{
     background: linear-gradient( 115deg, rgba(0, 25, 82, 0.8), rgba(32, 4, 64, 0.7));
     margin: 0 auto;
-    width: 40%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,4 +59,12 @@ form svg {
 }
  .unoo{
     padding-bottom: 1rem;
+}
+@media (max-width: 900px) {
+    form{
+        width: 100%;
+    }   
+    .bot{
+        padding: 1rem 1rem;
+    }   
 }

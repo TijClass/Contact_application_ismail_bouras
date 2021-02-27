@@ -22,6 +22,7 @@ table{
 
 .din{
     padding: 6rem 7rem;
+    width: 100%;
 }
 th , td{
     text-align: left;
