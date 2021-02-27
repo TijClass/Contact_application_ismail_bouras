@@ -36,3 +36,10 @@ h1 {
     margin-right: 5rem;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.logo{
+    float: left;
+    margin: 1rem;
+}
+p{
+    margin: 2rem 0;
+}
