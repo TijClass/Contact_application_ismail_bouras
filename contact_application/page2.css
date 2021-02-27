@@ -34,7 +34,7 @@ form input{
     box-sizing: border-box;
     border-radius: 6px;
     width: 50%;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 textarea{
     width: 50%;
@@ -48,6 +48,15 @@ textarea{
     display: flex;
     padding: 1rem 2rem;
 }
-.input{
-    width: 3rem;
+.bot input{
+    width: 4rem;
+}
+.bot label{
+    margin-top: 0.8rem;
+}
+form svg {
+    margin-top: 1rem;
+}
+ .unoo{
+    padding-bottom: 1rem;
 }
