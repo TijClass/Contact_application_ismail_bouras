@@ -36,8 +36,17 @@ form input{
     width: 50%;
     margin-top: 1rem;
 }
+textarea{
+    width: 50%;
+    height: 160px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
 .bot{
     display: flex;
+    padding: 1rem 2rem;
 }
 .input{
     width: 3rem;
