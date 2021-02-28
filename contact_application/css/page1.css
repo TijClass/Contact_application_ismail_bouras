@@ -6,7 +6,11 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background:#E9E4F0;
+    background:url(/contact_application/img/ho.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
 
 h1 {
