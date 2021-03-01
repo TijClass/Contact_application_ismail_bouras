@@ -17,9 +17,8 @@ body{
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
     border: 1px solid #ddd;
-    width: 50%;
+    /* width: 50%; */
 }
 th, td {
     text-align: left;
@@ -28,16 +27,19 @@ th, td {
 tr:nth-child(even){
     background-color: #f2f2f2
 }
+tr:nth-child(odd){
+    background-color: #f2f2f2
+}
 th{
     background-color: #3183FF;
     color: white;
 }
 tr:nth-child(even):hover{
-    background-color: rgb(255, 255, 255);
+    background-color: #B7BAC4;
     color: rgb(0, 0, 0);
 }
 tr:nth-child(odd):hover{
-    background-color: rgb(255, 255, 255);
+    background-color: #B7BAC4;
     color: rgb(0, 0, 0);
 }
 .nav{
@@ -109,3 +111,14 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
+@media (max-width: 980px) {
+    table {
+        width: 30%;
+    }
+    .xy{  
+        padding-left: 1rem;
+    }
+    
+
+}
+
