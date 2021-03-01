@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #B7BAC4;
+}
+.din{
+    padding: 6rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    width: 50%;
+}
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+th{
+    background-color: #3183FF;
+    color: white;
+}
+tr:nth-child(even):hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+tr:nth-child(odd):hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    background: rgb(255, 255, 255);
+    
+}
+.nap{
+    width: 20%;
+    background-color: #B7BAC4;
+    padding: 1rem 0REM;
+    justify-content: center;
+}
+.fap{
+    display: flex;
+    JUSTIFY-CONTENT: inherit;
+    width: 80%;
+    padding: 1rem;
+}
+.button{
+    display: inline-block;
+    padding: 1rem 20px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3183FF;
+    border: none;
+    border-radius: 24px;
+}
+.add{
+    background-color: white;
+    color: #000;
+    border: 1px solid black;
+}
+.xy{
+    display: flex;
+    width: 92.5%;
+    align-items: center;
+    margin-top: 8rem;
+    padding-left: 7rem;
+}
+.one{
+    width: 15%;
+    font-size: 0.6rem;
+}
+.tow{
+    display: flex;
+    JUSTIFY-CONTENT: flex-end;
+    width: 85%;
+}
+input{
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 24px;
+    padding: 0.5rem;
+}
+.chil{
+    padding: 0 1rem;
+}
+.x{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
