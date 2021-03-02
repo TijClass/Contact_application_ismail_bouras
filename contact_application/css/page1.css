@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background:url(/contact_application/img/ho.jpg);
+    background:url(../img/ho.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
