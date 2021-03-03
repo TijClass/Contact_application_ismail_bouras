@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/contact_application/css/page3.css">
+    <link rel="stylesheet" href="../assets/css/page3.css">
     <title>Document</title>
 </head>
 <body>
     <div class="table">
         <div class="nav">
             <div class="nap">
-            <img src="/contact_application/img/Y.svg" alt="">
+            <img src="../img/Y.svg" alt="">
             </div>
             <div class="fap">
                 <div>
@@ -55,7 +55,7 @@
                 <td>adress1</td>
                 <td>phone1</td>
                 <td>family</td>
-                <td class="x">Edit <img  src="/contact_application/img/o.svg" alt=""></td>
+                <td class="x">Edit <img  src="../img/o.svg" alt=""></td>
             </tr>
             <tr>
                 <td>58011</td>
@@ -65,7 +65,7 @@
                 <td>adress2</td>
                 <td>phone2</td>
                 <td>family</td>
-                <td class="x">Edit <img  src="/contact_application/img/o.svg" alt=""></td>
+                <td class="x">Edit <img  src="../img/o.svg" alt=""></td>
             </tr>
             <tr>
                 <td>58013</td>
@@ -75,7 +75,7 @@
                 <td>adress3</td>
                 <td>phone3</td>
                 <td>friend</td>
-                <td class="x">Edit <img  src="/contact_application/img/o.svg" alt=""></td>
+                <td class="x">Edit <img  src="../img/o.svg" alt=""></td>
             </tr>
             <tr>
                 <td>58014</td>
@@ -85,7 +85,7 @@
                 <td>adress4</td>
                 <td>phone4</td>
                 <td>friend</td>
-                <td class="x">Edit <img  src="/contact_application/img/o.svg" alt=""></td>
+                <td class="x">Edit <img  src="../img/o.svg" alt=""></td>
             </tr>
             <tr>
                 <td>58015</td>
@@ -95,7 +95,7 @@
                 <td>adress5</td>
                 <td>phone5</td>
                 <td>business</td>
-                <td class="x">Edit <img  src="/contact_application/img/o.svg" alt=""></td>
+                <td class="x">Edit <img  src="../img/o.svg" alt=""></td>
             </tr>
             
         </table>
