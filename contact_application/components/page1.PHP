@@ -30,7 +30,7 @@ print_r($_POST);
                             }
                         } 
                             else {
-                                 echo "Please fill your credentials";
+                                echo "Please fill your credentials";
                             }
 ?>
 <!DOCTYPE html>
