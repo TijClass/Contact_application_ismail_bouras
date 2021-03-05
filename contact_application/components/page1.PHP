@@ -1,38 +1,37 @@
 <?php
 
-require_once '../core/init.php';
-$query = "SELECT id,name,email,password from users";
-$result = $con->query($query);
-// $row = $result->fetch_object();
+$host = "localhost";
+$username = "root";
+$password = "";
+$db = "ismail";
 
-print_r($_SESSION);
-
-if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    //Query
-    if($username === $row->email && $password === $row->password)
-    {
-        redirect('index.php');
-        $session = (string)($row->name);
-        CreateSession('login', $session);
-    }
-
-    else {
-        
-
-        redirect('login.php');
-        session_unset();
-
-    }
-
-} 
-
-else {
-
-    //  echo "Please fill your credentials";
+$con = mysqli_connect($host,$username,$password,$db);
+if (!$con){
+    die("error :" . mysqli_connect_error());
 }
 
+print_r($_POST);
+
+        if (isset($_POST['submit'])) {
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            //Query
+            $sql = "SELECT * FROM isme WHERE username='".$username."' AND password='".$password."' LIMIT 1"; 
+            $result = mysqli_query($con,$sql);
+                        if($result->num_rows === 1)
+                            {
+                                header('location: page3.php');
+                                $session = (string)($row->ID);
+                                CreateSession('logout', $session);
+                            }
+                            else {
+                                header('location: page1.php');
+                                session_unset();
+                            }
+                        } 
+                            else {
+                                 echo "Please fill your credentials";
+                            }
 ?>
 <!DOCTYPE html>
 <html lang="en">
