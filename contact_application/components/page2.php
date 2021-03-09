@@ -12,17 +12,17 @@ echo '</pre>';
     $email = $_POST['email'];  
     $adress =$_POST['adress'];  
     $phone = $_POST['phone'];  
-    $group =$_POST['group'];  
-    $notes =$_POST['notes'];  
+    $group = $_POST['group'];  
+    // $notes =$_POST['notes'];  
     
-    $sql = "INSERT INTO `contact_us` (`fname`,`lname`,`email`,`adress`,`phone`,`catig`,'notes') VALUES('$fname','$lname','$email','$adress','$phone','$group','$notes')";
+    $sql = "INSERT INTO `contact_us` (`fname`,`lname`,`email`,`adress`,`phone`,`catig`) VALUES('$fname','$lname','$email','$adress','$phone','$group')";
     echo $sql;
 
     $result= mysqli_query($con,$sql);
 
     if ($result) {
         echo 'nice';
-    }else echo 'borass';
+    }else echo 'no';
 
 }
 ?>
