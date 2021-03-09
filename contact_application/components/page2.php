@@ -21,7 +21,7 @@ echo '</pre>';
     $result= mysqli_query($con,$sql);
 
     if ($result) {
-       echo 'nice';
+        echo 'nice';
     }else echo 'borass';
 
 }
@@ -53,9 +53,8 @@ echo '</pre>';
                 <input type="radio" name="group" value="friend"  class="input">Friend
                 <input type="radio" name="group" value="Businness"  class="input">Businness
             </div>
-            <label for="name" id="name-label" class="unoo">notes</label>
-            <textarea id="message" class="textarea uno" name="notes" placeholder="Enter your message here..."></textarea>
-            <!-- <button class="button" name="submit" >Submit</button>  -->
+            <label for="name"  class="unoo">notes</label>
+            <textarea  class="textarea uno" name="notes" placeholder="Enter your message here..."></textarea>
             <input type="submit" class="button but" name="submit" value="Login now">
         </form>
     </div>
