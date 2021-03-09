@@ -1,11 +1,9 @@
 <?php
-header('Content-type: text/html; charset=utf-8');
-//Include Configuration
-require_once('../config/config.php');
-//Helper Function Files
-require_once '../helpers/functions.php';
+session_start();
 
-/* l'utilisation des constantes prédifinies dans notre fichier config.php*/
+//Include Configuration
+require_once "C:\\xampp\\htdocs\\Contact_application_ismail_bouras\\contact_application\\config\\config.php";
+
 $con = new mysqli($host,$username,$password,$db);
 mb_internal_encoding('UTF-8');
 
