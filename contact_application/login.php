@@ -1,24 +1,30 @@
 <?php
 require_once "./core/init.php";
 
-        if (isset($_POST['submit'])) {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            //Query
-            $sql = "SELECT * FROM isme WHERE username='".$username."' AND password='".$password."' LIMIT 1"; 
-            $result = mysqli_query($con,$sql);
+if ( isset($_SESSION["login"]) ) {
+    header('location: index.php');
+    die();
+}
 
-                        if($result->num_rows === 1)
-                            {
-                                $_SESSION["login"] = "true";
-                                header('location: index.php');
-                                die();
-                            }
-                            else {
-                                header('location: login.php');
-                                session_unset();
-                            }
-                        } 
+
+if (isset($_POST['submit'])) { 
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    //Query
+    $sql = "SELECT * FROM isme WHERE username='$username' AND password='$password'"; 
+    $result = mysqli_query($con,$sql);
+
+    if($result->num_rows === 1)
+    {
+        $_SESSION["login"] = "true";
+        header('location: index.php');
+        die();
+    }
+    else {
+        header('location: login.php');
+        session_unset();
+    }
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">

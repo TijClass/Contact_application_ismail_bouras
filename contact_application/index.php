@@ -29,7 +29,7 @@
                     <h2>My web app</h2>
                 </div>
                 <div>
-                    <button class="button"> < Logout</button>            
+                    <a href="logout.php"  class="button"> < Logout</a>            
                 </div>
             </div>
         </div>
@@ -42,12 +42,13 @@
                     <input  type="text" id="name" placeholder=" Search " requiered >
                 </div>
                 <div class="chil">
-                    <button class="button add">Add a Person</button> 
+                    <a href="./addPerson.php" class="button add">Add a Person</a> 
                 </div>
             </div>
         </div>
         <div class="din">
         <table>
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>first name</th>
@@ -56,59 +57,38 @@
                 <th>Adress</th>
                 <th>Phone</th>
                 <th>groupe</th>
-                <th>actions</th>
             </tr>
-            <tr>
-                <td>58011</td>
-                <td>Abby</td>
-                <td>Adams</td>
-                <td>abby@anywhere.com</td>
-                <td>adress1</td>
-                <td>phone1</td>
-                <td>family</td>
-                <td class="x">Edit <img  src="../assets/img/o.svg" alt=""></td>
-            </tr>
-            <tr>
-                <td>58011</td>
-                <td>Barbara</td>
-                <td>bardley</td>
-                <td>Barbara@anywhere.com</td>
-                <td>adress2</td>
-                <td>phone2</td>
-                <td>family</td>
-                <td class="x">Edit <img  src="../assets/img/o.svg" alt=""></td>
-            </tr>
-            <tr>
-                <td>58013</td>
-                <td>Cassie</td>
-                <td>Cohen</td>
-                <td>cassie@anywhere.com</td>
-                <td>adress3</td>
-                <td>phone3</td>
-                <td>friend</td>
-                <td class="x">Edit <img  src="../assets/img/o.svg" alt=""></td>
-            </tr>
-            <tr>
-                <td>58014</td>
-                <td>Dana</td>
-                <td>Donnely</td>
-                <td>dana@anywhere.com</td>
-                <td>adress4</td>
-                <td>phone4</td>
-                <td>friend</td>
-                <td class="x">Edit <img  src="../assets/img/o.svg" alt=""></td>
-            </tr>
-            <tr>
-                <td>58015</td>
-                <td>Edith</td>
-                <td>Eastman</td>
-                <td>edith@anywhere.com</td>
-                <td>adress5</td>
-                <td>phone5</td>
-                <td>business</td>
-                <td class="x">Edit <img  src="../assets/img/o.svg" alt=""></td>
-            </tr>
-            
+            </thead>
+            <tbody>
+            <?php 
+
+                 $sql = "SELECT * FROM contact_us"; 
+                 $result = mysqli_query($con,$sql);
+                 $rows = $result->fetch_all(MYSQLI_ASSOC);
+                 $length = count($rows);
+                if ( $length > 0 ) {
+
+                    for ($i=0; $i < $length; $i++) { 
+                        echo '<tr>';
+                        echo '<td>'.$rows[$i]["ID"].'</td>';
+                        echo '<td>'.$rows[$i]["fname"].'</td>';
+                        echo '<td>'.$rows[$i]["lname"].'</td>';
+                        echo '<td>'.$rows[$i]["email"].'</td>';
+                        echo '<td>'.$rows[$i]["Adress"].'</td>';
+                        echo '<td>'.$rows[$i]["phone"].'</td>';
+                        echo '<td>'.$rows[$i]["catig"].'</td>';
+                        echo '</tr>';
+
+                    }
+                    
+                }else{
+                    echo '<tr>';
+                    echo '<td style="text-align:center;" colspan="8">There is no contact</td>';
+                    echo '</tr>';
+                }
+
+            ?>
+            </tbody>
         </table>
         </div>
     </div>

@@ -1,11 +1,12 @@
 <?PHP 
-require_once "../core/init.php";
+require_once "./core/init.php";
+
+if ( !isset($_SESSION["login"]) ) {
+    header('location: login.php');
+    die();
+}
 
 if(isset($_POST['submit'])){
-
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
 
     $fname = $_POST['fname'];  
     $lname = $_POST['lname'];  
@@ -21,8 +22,9 @@ echo '</pre>';
     $result= mysqli_query($con,$sql);
 
     if ($result) {
-        echo 'nice';
-    }else echo 'no';
+        header("location:index.php");
+        die();
+    }else echo 'not success !!';
 
 }
 ?>
@@ -32,7 +34,7 @@ echo '</pre>';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/page2.css">
+    <link rel="stylesheet" href="./assets/css/page2.css">
     <title>Document</title>
 </head>
 <body>
